@@ -140,7 +140,7 @@ print(f"Predicted House Value: ${prediction[0]*100000:.2f}")
 
 ## 👤 Author
 
-**[Your Name]**
+**Abhilasha Singh**
 AI/ML Internship — Maincrafts
 📧 hr@maincrafts.com
 🌐 [www.maincrafts.com](https://www.maincrafts.com)
@@ -150,3 +150,212 @@ AI/ML Internship — Maincrafts
 ## 📄 License
 
 This project is created for educational purposes as part of an AI/ML Internship task at Maincrafts.
+
+# 🏠 California Housing Model Comparison
+
+### Regression Model Comparison | AI/ML Internship Task 2 — Maincrafts
+
+---
+
+## 📌 Project Overview
+
+This project compares the performance of multiple machine learning regression algorithms on the **California Housing Dataset** to determine which model predicts house prices most effectively.
+
+The project demonstrates a complete machine learning workflow including data preprocessing, feature scaling, model training, evaluation, and performance comparison using standard regression metrics.
+
+This project is part of **Task 2** of the AI/ML Internship at **Maincrafts**, focusing on model evaluation and selection in supervised machine learning.
+
+---
+
+## 📁 Project Structure
+
+```text
+📦 ml-model-comparison-california-housing
+├── 📓 AI_ML_Task2_Model_Comparison.ipynb   ← Main Jupyter Notebook
+├── 📋 Model_Comparison_Report.pdf          ← Project Report
+├── 📄 requirements.txt                     ← Dependencies
+└── 📄 README.md                            ← Documentation
+```
+
+---
+
+## 📊 Dataset
+
+* **Source:** California Housing Dataset (Scikit-Learn)
+* **Origin:** 1990 U.S. Census Data
+* **Total Samples:** 20,640
+* **Input Features:** 8
+* **Target Variable:** HousePrice (Median House Value)
+
+| Feature    | Description                  |
+| ---------- | ---------------------------- |
+| MedInc     | Median income in block group |
+| HouseAge   | Median house age             |
+| AveRooms   | Average number of rooms      |
+| AveBedrms  | Average number of bedrooms   |
+| Population | Block group population       |
+| AveOccup   | Average household occupancy  |
+| Latitude   | Geographic latitude          |
+| Longitude  | Geographic longitude         |
+| HousePrice | Target variable              |
+
+---
+
+## 🔁 Steps Performed
+
+### 1. Data Loading
+
+* Loaded California Housing Dataset using Scikit-Learn.
+
+### 2. Data Preparation
+
+* Created feature matrix (`X`) and target variable (`y`).
+
+### 3. Feature Scaling
+
+* Applied **StandardScaler** to normalize input features.
+
+### 4. Train-Test Split
+
+* Split data into:
+
+  * **80% Training Data**
+  * **20% Testing Data**
+* Used `random_state=42` for reproducibility.
+
+### 5. Model Training
+
+The following regression models were trained and evaluated:
+
+| Model                   | Description                   |
+| ----------------------- | ----------------------------- |
+| Linear Regression       | Baseline regression model     |
+| Ridge Regression        | Regularized linear regression |
+| Decision Tree Regressor | Tree-based regression model   |
+
+### 6. Model Evaluation
+
+Models were evaluated using:
+
+* **RMSE (Root Mean Squared Error)**
+* **R² Score (Coefficient of Determination)**
+
+### 7. Performance Comparison
+
+A comparison table was generated to evaluate which algorithm performed best on the testing dataset.
+
+### 8. Visualization
+
+Created an **Actual vs Predicted House Prices** scatter plot for the selected model to visually assess prediction quality.
+
+---
+
+## 📈 Evaluation Metrics
+
+### RMSE (Root Mean Squared Error)
+
+Measures average prediction error while penalizing larger mistakes.
+
+```text
+Lower RMSE = Better Model
+```
+
+### R² Score
+
+Measures how much variance in house prices is explained by the model.
+
+```text
+Higher R² = Better Model
+```
+
+---
+
+## 🤖 Models Compared
+
+| Model                   | Type                     |
+| ----------------------- | ------------------------ |
+| Linear Regression       | Linear Model             |
+| Ridge Regression        | Regularized Linear Model |
+| Decision Tree Regressor | Tree-Based Model         |
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology       | Purpose                 |
+| ---------------- | ----------------------- |
+| Python 3.x       | Programming Language    |
+| Pandas           | Data Manipulation       |
+| NumPy            | Numerical Computation   |
+| Matplotlib       | Data Visualization      |
+| Scikit-Learn     | Machine Learning Models |
+| StandardScaler   | Feature Scaling         |
+| Jupyter Notebook | Development Environment |
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/ml-model-comparison-california-housing.git
+cd ml-model-comparison-california-housing
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Launch Jupyter Notebook
+
+```bash
+jupyter notebook AI_ML_Task2_Model_Comparison.ipynb
+```
+
+### 4. Run All Cells
+
+Execute all notebook cells from top to bottom.
+
+---
+
+## 📊 Expected Output
+
+The notebook will:
+
+* Train three regression models
+* Calculate RMSE and R² Score
+* Display a performance comparison table
+* Visualize actual vs predicted house prices
+* Help identify the best-performing model
+
+---
+
+## 🚀 Future Improvements
+
+* ✅ Hyperparameter tuning using GridSearchCV
+* ✅ Add Random Forest Regressor
+* ✅ Add Gradient Boosting Regressor
+* ✅ Implement XGBoost
+* ✅ Perform Cross-Validation
+* ✅ Feature Engineering for improved performance
+* ✅ Compare additional ensemble models
+
+---
+
+## 👤 Author
+
+**Abhilasha Singh**
+AI/ML Internship — Maincrafts
+
+📧 [hr@maincrafts.com](mailto:hr@maincrafts.com)
+🌐 [www.maincrafts.com](http://www.maincrafts.com)
+
+---
+
+## 📄 License
+
+This project was developed for educational purposes as part of the AI/ML Internship Program at Maincrafts.
+
